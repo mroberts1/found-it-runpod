@@ -39,7 +39,7 @@ fetch https://huggingface.co/comfyanonymous/flux_text_encoders/resolve/main/t5xx
 
 # Civitai LoRAs (version ids resolved from the model pages in the workflow notes)
 civ() { fetch "https://civitai.com/api/download/models/$1?token=$CIVITAI_TOKEN" "$M/loras/Flux/$2"; }
-civ 1276001 2000sAnalogCore.safetensors
+civ 1640450 2000sAnalogCore.safetensors  # v3 (2000analogcore_v3.safetensors), saved under the name the workflow expects
 civ 1026423 UltraRealPhoto.safetensors
 civ 1135830 VHS_flux_v1_000001500.safetensors
 

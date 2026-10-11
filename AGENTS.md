@@ -19,7 +19,7 @@ Keep this file current: when scripts, paths, versions, or workflow wiring change
 - LoRA names use forward slashes (`Flux/name.safetensors`). The original workflow uses Windows backslashes and will not match on Linux.
 - The VAE file must be named `ae.sft` to match the workflow. It is `ae.safetensors` from the gated FLUX.1-dev repo, renamed on download.
 - `flux1-dev` and `ae` need `HF_TOKEN` from an account that accepted the license. Civitai LoRAs need `CIVITAI_TOKEN`. Read both from env vars, never write them into files.
-- Civitai LoRAs are fetched by version id (1276001, 1026423, 1135830), matched by exact filename to the workflow. Check the id if a LoRA filename changes.
+- Civitai LoRAs are fetched by version id (1640450, 1026423, 1135830). 1640450 is 2000s Analog Core v3, saved as `2000sAnalogCore.safetensors` so the workflow name still matches. Check the id if a LoRA filename changes.
 - Download helpers skip existing files and resume with `-C -`, so the scripts are safe to re-run.
 - `serverless/workflow_api.json` is hand-derived from the UI graph, not exported from ComfyUI. If the UI workflow changes, update it by hand or re-export with "Save (API Format)". Node 85 is the prompt, node 25 the seed.
 - `FilmGrain` (node 80) is bypassed in the UI workflow, so the API graph omits it and `SaveImage` reads `VAEDecode`. Re-enabling it means adding `comfyui-post-processing-nodes` to the Dockerfile and `setup.sh`.

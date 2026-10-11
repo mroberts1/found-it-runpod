@@ -55,7 +55,7 @@ Models (under `ComfyUI/models`):
 | `vae/ae.sft`                                        | `ae.safetensors` from FLUX.1-dev, renamed    |
 | `clip/clip_l.safetensors`                           | comfyanonymous/flux_text_encoders            |
 | `clip/t5xxl_fp16.safetensors`                       | comfyanonymous/flux_text_encoders            |
-| `loras/Flux/2000sAnalogCore.safetensors`            | Civitai version 1276001                      |
+| `loras/Flux/2000sAnalogCore.safetensors`            | Civitai version 1640450 (v3, renamed)         |
 | `loras/Flux/UltraRealPhoto.safetensors`             | Civitai version 1026423                      |
 | `loras/Flux/VHS_flux_v1_000001500.safetensors`      | Civitai version 1135830                      |
 | `loras/Flux/Experimental_Analog_Photography-FLUX.safetensors` | `upload_lora.sh`                   |
